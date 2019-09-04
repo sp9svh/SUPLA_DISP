@@ -1,9 +1,10 @@
 /**
    Supla.org NodeMCU WiFi minimal example
    Author: Programistyk - Kamil Kaminski <kamil@programistyk.pl>
+   Modifications: sp9svh@kpgk.pl
 
    This example shows how to configure SuplaDevice for building for NodeMCU within Arduino IDE
-   Działa ale do przerobienia - wyswietlanie cisnienia , termometr zewnętrzny
+   Działa ale do przerobienia
 */
 
 
@@ -146,8 +147,8 @@ char* Message[] = {"This is string 1",
 WiFiClient client;
 
 // Setup Supla connection
-const char* ssid     = "huahome";
-const char* password = "!!Dabie1957";
+const char* ssid     = "*****";
+const char* password = "*****";
 
 char str[10];
 char StatCommStr[25];
@@ -261,9 +262,9 @@ char GUID[SUPLA_GUID_SIZE] = {0x60,0xC9,0x23,0x0A,0x61,0x24,0x06,0x24,0x62,0x9f,
 
   SuplaDevice.begin(GUID,              // Global Unique Identifier
                     mac,               // Ethernet MAC address
-                    "svr22.supla.org",  // SUPLA server address
-                    1693,                 // Location ID
-                    "3b56");               // Location Password
+                    "*****.supla.org",  // SUPLA server address
+                    ****,                 // Location ID
+                    "****");               // Location Password
 
 }
 
